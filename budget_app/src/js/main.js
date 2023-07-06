@@ -24,7 +24,65 @@ let startBtn = document.getElementById("start"),
     yearValue = document.querySelector('.year-value'),
     monthValue = document.querySelector('.month-value'),
     dayValue = document.querySelector('.day-value');
+//удалить потом
+    window.addEventListener('DOMContentLoaded', function(){
+        let box = this.document.querySelector('.start');
+    
+        box.addEventListener('touchstart', function(e){
+            e.preventDefault();
+            console.log('lol');
+            console.log(e.touches);
+            console.log(e.changedTouches);
+            console.log(e.targetTouches);
 
+        });
+    });
+    window.addEventListener('DOMContentLoaded', function(){
+        let box = this.document.querySelector('.start');
+    
+        box.addEventListener('touchmove', function(e){
+            e.preventDefault();
+            console.log('lol');
+        });
+    });
+    window.addEventListener('DOMContentLoaded', function(){
+        let box = this.document.querySelector('.start');
+    
+        box.addEventListener('touchend', function(e){
+            e.preventDefault();
+            console.log('lol');
+        });
+    });
+
+    // new RegExp('pattern', 'flags');
+    // /pattern/
+
+    let ans = ('Проверка    адреса    электронной 12342134почты на    корректность\n одна из самых частых задач   веб-разработчика. Без   *^&$*@этого не 22341обходятся ни разнообразные формы подписки, ни авторизация.')
+    let otv  = ans.replace(/\s\s\s/g, '');
+    let otv2  = ans.replace(/@/g, '');
+
+    console.log(otv);
+    console.log(otv2);
+
+
+    // i register flag
+    // g global flag
+    // m флаг многострочности
+
+    let timerId = setTimeout(sayHello, 3000);//packing
+
+    // clearTimeout(timerId); to stop
+    function sayHello(){
+        alert('Hi');
+    }
+
+
+
+
+
+
+
+//вот до сюда
 let money, time;
 
 expensesBtn.disabled = true;
@@ -139,3 +197,4 @@ const appData = {
 	timeData: time,
     savings: false
 };
+

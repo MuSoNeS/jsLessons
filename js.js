@@ -32,3 +32,19 @@ document.body.replaceChild(heart[2], circle[1]);
 
 div.innerHTML = '<h1>Hello world!</h1>';
 div.style.fontSize = '12px';
+
+// touchstart
+// touchmove
+// touchend
+// touchenter
+// touchleave
+// touchcancel
+
+window.addEventListener('DOMContentLoaded', function(){
+    let box = this.document.querySelector('.box');
+
+    box.addEventListener('touchstart', function(e){
+        e.preventDefault();
+        console.log('lol');
+    })
+})
