@@ -25,6 +25,9 @@ let startBtn = document.getElementById("start"),
     monthValue = document.querySelector('.month-value'),
     dayValue = document.querySelector('.day-value');
 //удалить потом
+    
+
+
     window.addEventListener('DOMContentLoaded', function(){
         let box = this.document.querySelector('.start');
     
@@ -75,6 +78,7 @@ let startBtn = document.getElementById("start"),
     function sayHello(){
         alert('Hi');
     }
+
 
 
 
